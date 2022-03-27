@@ -1,0 +1,18 @@
+<div class="home-container">
+  <div class="filters">
+    <mat-form-field>
+      <mat-label>Сортировка</mat-label>
+      <mat-select
+      panelClass="sort-select"
+      [(ngModel)]="sort">
+        <mat-option value="name">Название</mat-option>
+        <mat-option value="-released">Дата выхода</mat-option>
+        <mat-option value="-added">Дата добавления</mat-option>
+        <mat-option value="-created">Дата создания</mat-option>
+        <mat-option value="-updated">Дата обновления</mat-option>
+        <mat-option value="-rating">Рейтинг</mat-option>
+        <mat-option value="metacritic">Оценка на метакритике</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>

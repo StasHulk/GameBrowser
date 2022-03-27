@@ -1,0 +1,12 @@
+<div class="search-container">
+  <form class="search-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <span class="search-form__home-icon"><mat-icon>home</mat-icon></span>
+    <input
+      type="text"
+      class="search-form__input"
+      ngModel
+      name="searchInput"
+      placeholder="Search a game...">
+    <button class="search-form__search-button"><mat-icon>search</mat-icon></button>
+  </form>
+</div>
